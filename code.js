@@ -47,4 +47,3 @@ function resetAnimation(el) {
   el.offsetHeight; /* trigger reflow */
   el.style.animation = null; 
 }
-}
