@@ -15,7 +15,7 @@ function randomize(){
    
     for(let i=0; i<chosen.length;i++){
         let pic = document.createElement("img");
-        pic.setAttribute("src","img/progress_token_"+chosen[i]+".png");
+        pic.setAttribute("src","img/progress_token_"+chosen[i]+"_cut.png");
         pic.classList.add("token");
         output.append(pic);
     }
