@@ -1,0 +1,16 @@
+
+body {text-align:center;background-color:#F7DFBD;}
+#output{margin-top:20px;}
+
+@media only screen and (max-width: 600px){
+    #logo {width:80%;}
+    .token {width:33%;}
+}
+
+#random{
+    padding:5px 15px;
+    font-size:1.5em;
+    background-color:light-gray;
+    border:2px solid gray;
+    border-radius:10px;
+    display:inline-block;}
