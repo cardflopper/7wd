@@ -6,6 +6,7 @@ randomize();
 function randomize(){
 
     let output = document.getElementById("output");
+    output.hidden=true;
     while (output.firstChild) {
         output.removeChild(output.lastChild);
     }    
@@ -19,6 +20,7 @@ function randomize(){
         pic.classList.add("token");
         output.append(pic);
     }
+    output.hidden=false;
 }
 
 /**
