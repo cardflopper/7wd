@@ -6,6 +6,7 @@ randomize();
 function randomize(){
 
     let output = document.getElementById("output");
+    output.hidden=true;
     while (output.firstChild) {
         output.removeChild(output.lastChild);
     }    
@@ -13,12 +14,14 @@ function randomize(){
 
     let chosen = tokens.slice(0,5);
    
+    
     for(let i=0; i<chosen.length;i++){
         let pic = document.createElement("img");
         pic.setAttribute("src","img/progress_token_"+chosen[i]+"_cut.png");
         pic.classList.add("token");
         output.append(pic);
     }
+    output.hidden=false;
 }
 
 /**
