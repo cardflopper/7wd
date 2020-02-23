@@ -2,8 +2,16 @@ let tokens = ['agr','arc','eco','law','mas','mat','phi','str','the','urb'];
 
 randomize();
 
-
 function randomize(){
+    let output = document.getElementById("output");
+    resetAnimation(output);
+    output.hidden = true;
+    shuffle();
+    output.hidden = false;
+    output.classList.add("slide");
+}
+
+function shuffle(){
 
     let output = document.getElementById("output");
     output.hidden=true;
@@ -34,4 +42,10 @@ function shuffleArray(array) {
         array[i] = array[j];
         array[j] = temp;
     }
+}
+
+function resetAnimation(el) {
+  el.style.animation = 'none';
+  el.offsetHeight; /* trigger reflow */
+  el.style.animation = null; 
 }

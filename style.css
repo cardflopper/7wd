@@ -13,4 +13,19 @@ body {text-align:center;background-color:#F7DFBD;}
     background-color:light-gray;
     border:2px solid gray;
     border-radius:10px;
-    display:inline-block;}
+    display:inline-block;
+    margin-top:20px
+}
+
+/* The animation code */
+@keyframes slide-up {
+  from{opacity:0%; margin-top:50px;}
+  to {opacity:100%;}
+}
+
+/* The element to apply the animation to */
+.slide {
+  animation-name: slide-up;
+  animation-duration: 2s;
+  position:relative;
+}
