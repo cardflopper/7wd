@@ -18,12 +18,10 @@ function shuffle(){
         output.removeChild(output.lastChild);
     }    
     shuffleArray(tokens)
-
-    let chosen = tokens.slice(0,5);
    
-    for(let i=0; i<chosen.length;i++){
+    for(let i=0; i<5;i++){
         let pic = document.createElement("img");
-        pic.setAttribute("src","img/progress_token_"+chosen[i]+"_cut.png");
+        pic.setAttribute("src","img/progress_token_"+tokens[i]+"_cut.png");
         pic.classList.add("token");
         output.append(pic);
     }
